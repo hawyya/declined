@@ -29,12 +29,12 @@
     <main>
         <div class="container-main">
             <div class="img-wrapper">
-                <img src="image.png" alt="" class="img-main">
+                <img src="image.jpg" alt="" class="img-main">
             </div>
         </div>
     </main>
     <style>
-     *{
+        *{
     margin: 0;
     padding: 0;
 }
@@ -109,16 +109,23 @@ header{
     width: 100%;
 }
 
+
+.container-main{
+    border: 2px solid red;
+    height: 89vh;
+}
+
 .img-wrapper{
     display: flex;
     justify-content: center;
     height: 100%;
+    align-items: center;
 }
 
 
 .img-main{
-    width: 720px;
-    height: 720px;
+    width: 520px;
+    height: 520px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -157,29 +164,27 @@ header{
     }
 
     .img-main{
-        width: 650px;
-        height: 650px;
+        width: 400px;
+        height: 400px;
     }
 }
 
-@media( max-width: 425px){
+@media( max-width: 430px){
     .name-wrapper{
         margin-top: 30px;
     }
 
-    .img-main{
-        margin-right: 20px;
-    }
-
     .container-main{
         align-items: center;
+        height: 80vh;
     }
 
-    .img-wrapper{
+    .img-main{
+        width: 350px;
+        height: 350px;
+    }
 }
 
-}
-   
     </style>
 </body>
 </html>
