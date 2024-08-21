@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(0, 0, 0);
+    overflow-x: hidden;
+}
+
+header{
+    height: 80px;
+    width: 100%;
+}
+
+.name-wrapper{
+    display: flex;
+    margin-left: 35px;
+    align-items: center;
+    height: 80px;
+}
+
+.container{
+    display: flex;
+    height: 80px;
+    align-items: center;
+}
+
+.name{
+    color: rgba(255, 255, 255, 0.713);
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 30px;
+    cursor: pointer;
+    user-select: none;
+}
+
+
+.ul-wrapper{
+    width: 100%;
+}
+
+.ul{
+    color: white;
+    display: flex;
+    list-style: none;
+    display: flex;
+    justify-content: end;
+    margin-right: 30px;
+}
+
+.li{
+    margin-right: 0;
+    font-family: "Montserrat";
+    cursor: pointer;
+    position: relative; 
+    user-select: none;
+    margin-right: 30px;
+}
+
+.li::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px; 
+    background-color: #fff;
+    transition: width 0.7s;
+}
+
+.li:hover::after {
+    width: 100%;
+}
+
+.img-wrapper{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+
+.img-main{
+    width: 720px;
+    height: 720px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.no-style{
+    color: white;
+    text-decoration: none;
+}
+
+@media( max-width: 615px ){
+    .container{
+        display: block;
+    }
+
+    .ul{
+        justify-content: center;
+        margin-right: 0;
+    }
+
+    .li-cont{
+        margin-right: 0;
+    }
+
+    .name-wrapper{
+        justify-content: center;
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}
+
+
+@media( max-width: 550px){
+    .name-wrapper{
+        margin-top: 30px;
+    }
+
+    .img-main{
+        width: 650px;
+        height: 650px;
+    }
+}
+
+@media( max-width: 425px){
+    .name-wrapper{
+        margin-top: 30px;
+    }
+
+    .img-main{
+        margin-right: 20px;
+    }
+
+    .container-main{
+        align-items: center;
+    }
+
+    body{
+        overflow-y: hidden;
+    }
+}
